@@ -66,8 +66,8 @@ public class StepDefinations{
     @When(": the user clicks on brands Icon")
     public void the_User_Clicks_On_Brands_Icon() {
         homePage = new HomePage(driver);
-        homePage.getSearchBox().sendKeys("Brands");
-        homePage.getSearchBox().sendKeys(Keys.ENTER);
+        homePage.getSearchBrand().sendKeys("Brands");
+        homePage.getSearchBrand().sendKeys(Keys.ENTER);
 
     }
 
@@ -79,38 +79,54 @@ public class StepDefinations{
 
     @Then(": the different brands are displayed to the user")
     public void the_Different_Brands_Are_Displayed_To_The_User() {
-        String text = homePage.getSearchResult().getText();
+        String text = homePage.getSearchBrandResult().getText();
         Assert.assertEquals(text, "L'Oreal Paris ");
 
     }
 
     @When(": the user clicks on nykaa fashion")
     public void the_User_Clicks_On_Nykaa_Fashion() {
+        homePage = new HomePage(driver);
+        homePage.getSearchBox().sendKeys("Nykaa cosmetics");
+        homePage.getSearchBox().sendKeys(Keys.ENTER);
 
     }
 
     @Then(": the different nykaa fashion products are displayed")
     public void the_Different_Nykaa_Fashion_Products_Are_Displayed() {
+        String text = homePage.getSearchResult().getText();
+        Assert.assertEquals(text, "Nykaa cosmetics");
 
     }
 
     @When(": the user click on cart")
     public void the_User_Click_On_Cart() {
+        homePage = new HomePage(driver);
+        homePage.getSearchBox().sendKeys("Nykaa cosmetics");
+        homePage.getSearchBox().sendKeys(Keys.ENTER);
 
     }
 
     @Then(": User can successfully add a product to cart")
     public void user_Can_Successfully_Add_AProduct_To_Cart() {
+        String text = homePage.getSearchResult().getText();
+        Assert.assertEquals(text, "Nykaa cosmetics");
 
     }
 
 
     @When(": the user clicks on searchbar and enters {string}")
-    public void theUserClicksOnSearchbarAndEnters(String arg0) {
+    public void the_User_Clicks_On_Searchbar_And_Enters(String arg0) {
+        homePage = new HomePage(driver);
+        homePage.getSearchBox().sendKeys("Nykaa cosmetics");
+        homePage.getSearchBox().sendKeys(Keys.ENTER);
         
     }
 
     @Then(": Products gets displayed")
-    public void productsGetsDisplayed() {
+    public void products_Gets_Displayed() {
+        String text = homePage.getSearchResult().getText();
+        Assert.assertEquals(text, "Nykaa cosmetics");
+
     }
 }

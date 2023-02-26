@@ -1,0 +1,7 @@
+utils\BrowserManager.class
+runners\TestRunner.class
+steps\StepDefinations.class
+utils\QaProps.class
+utils\TestDataReader.class
+Pages\HomePage.class
+steps\Hooks.class

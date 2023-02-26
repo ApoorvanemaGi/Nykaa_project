@@ -32,5 +32,17 @@ public class HomePage {
     @FindBy(xpath = "//h1[@class=\"page-title-search\"]")
     WebElement searchResult;
 
+    @FindBy(xpath = "//a[@class=\"css-1mavm7h\"]")
+    WebElement searchBrand;
 
+    public WebElement getSearchBrand() {
+        return searchBrand;
+    }
+    @FindBy(xpath = "//input[@placeholder=\"search brands\"]")
+    WebElement searchBrandResult;
+
+    public WebElement getSearchBrandResult() {
+        return searchBrandResult;
+    }
 }
+
