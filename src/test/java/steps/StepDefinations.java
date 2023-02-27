@@ -63,4 +63,12 @@ public class StepDefinations{
     }
 
 
+    @When(": the user click on cart")
+    public void the_User_Click_On_Cart() {
+
+    }
+
+    @Then(": User can successfully add a product to cart")
+    public void user_Can_Successfully_Add_A_Product_To_Cart() {
+    }
 }
