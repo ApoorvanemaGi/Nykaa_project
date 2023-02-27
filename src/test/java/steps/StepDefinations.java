@@ -71,4 +71,13 @@ public class StepDefinations{
     @Then(": User can successfully add a product to cart")
     public void user_Can_Successfully_Add_A_Product_To_Cart() {
     }
+
+    @When(": the user clicks on searchbar and enters {string}")
+    public void the_User_Clicks_On_Searchbar_And_Enters(String arg0) {
+
+    }
+
+    @Then(": Products gets displayed")
+    public void products_Gets_Displayed() {
+    }
 }
