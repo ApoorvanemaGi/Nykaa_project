@@ -53,6 +53,7 @@ public class StepDefinations{
         homePage = new HomePage(driver);
         homePage.getSearchBox().sendKeys("Nykaa cosmetics");
         homePage.getSearchBox().sendKeys(Keys.ENTER);
+        homePage.getSearchBox().click();
 
     }
     @Then(": the products results should be displayed")
@@ -62,22 +63,15 @@ public class StepDefinations{
 
     }
 
-
-    @When(": the user click on cart")
-    public void the_User_Click_On_Cart() {
-
-    }
-
-    @Then(": User can successfully add a product to cart")
-    public void user_Can_Successfully_Add_A_Product_To_Cart() {
-    }
-
     @When(": the user clicks on searchbar and enters {string}")
-    public void the_User_Clicks_On_Searchbar_And_Enters(String arg0) {
-
+    public void the_User_Clicks_On_Searchbar_And_Enters(String product) {
+        homePage.getSearchBox().click();
+        homePage.getSearchBox().sendKeys(product);
     }
 
     @Then(": Products gets displayed")
-    public void products_Gets_Displayed() {
+    public void products_Gets_Displayed(String result) {
+        String text = homePage.getSearchResult().getText();
+        Assert.assertTrue(text.contains(result));
     }
 }

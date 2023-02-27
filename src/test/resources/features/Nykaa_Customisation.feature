@@ -19,10 +19,10 @@ Feature:Customisation of product features
     When : the user enter the product name
     Then : the products results should be displayed
 
-  Scenario: Verify that user is able to add a product to cart
+  Scenario: Verify that the user should be able to search a product
     Given : The user navigates to the home page
-    When : the user click on cart
-    Then : User can successfully add a product to cart
+    When : the user enter the product name
+    Then : the products results should be displayed
 
   Scenario Outline:  User should be able to search two products
     Given : The user navigates to the home page

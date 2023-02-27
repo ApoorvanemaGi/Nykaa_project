@@ -9,15 +9,15 @@ Feature:Customisation of product features
     Then : the products results should be displayed
 
 @Smoke
-  Scenario: Verify that the user is able to click the brands button so that he/she can search different brands inside the dropdown
+  Scenario: Verify that the user should be able to search a product
     Given : The user navigates to the home page
-    When : the user clicks on brands Icon
-    Then : the different brands are displayed to the user
+    When : the user enter the product name
+    Then : the products results should be displayed
 
-  Scenario: Verify that user is able to click on nykaa fashion
+  Scenario: Verify that the user should be able to search a product
     Given : The user navigates to the home page
-    When : the user clicks on nykaa fashion
-    Then : the different nykaa fashion products are displayed
+    When : the user enter the product name
+    Then : the products results should be displayed
 
   Scenario: Verify that user is able to add a product to cart
     Given : The user navigates to the home page
