@@ -8,7 +8,7 @@ Feature:Customisation of product features
     When : the user enter the product name
     Then : the products results should be displayed
 
-@Smoke
+
   Scenario: Verify that the user should be able to search a product
     Given : The user navigates to the home page
     When : the user enter the product name

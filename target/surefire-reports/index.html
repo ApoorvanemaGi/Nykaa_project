@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 2 failed,   1 passed</span>
+                    <span class="method-stats">6 methods, 2 failed,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,12 +103,12 @@
                     <div class="method-list-content failed suite-All_Test_Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-All_Test_Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify that user is able to click on cart&quot;, &quot;Customisation of product features&quot;)">runScenario("Verify that user is able to click on cart", "Customisation of product features")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-All_Test_Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;User should be able to search two products&quot;, &quot;Customisation of product features&quot;)">runScenario("User should be able to search two products", "Customisation of product features")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-All_Test_Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify that the user is able to click the brands button so that he/she can search different brands ...)">runScenario("Verify that the user is able to click the brands button so that he/she can search different brands ...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-All_Test_Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;User should be able to search two products&quot;, &quot;Customisation of product features&quot;)">runScenario("User should be able to search two products", "Customisation of product features")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-All_Test_Suite -->
@@ -120,6 +120,21 @@
                       <a href="#" panel-name="suite-All_Test_Suite" class="show-methods passed suite-All_Test_Suite"> (show)</a> <!-- show-methods passed suite-All_Test_Suite -->
                     </span>
                     <div class="method-list-content passed suite-All_Test_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify that the user should be able to search a product&quot;, &quot;Customisation of product features&quot;)">runScenario("Verify that the user should be able to search a product", "Customisation of product features")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify that the user should be able to search a product&quot;, &quot;Customisation of product features&quot;)">runScenario("Verify that the user should be able to search a product", "Customisation of product features")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify that the user should be able to search a product&quot;, &quot;Customisation of product features&quot;)">runScenario("Verify that the user should be able to search a product", "Customisation of product features")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-All_Test_Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify that the user should be able to search a product&quot;, &quot;Customisation of product features&quot;)">runScenario("Verify that the user should be able to search a product", "Customisation of product features")</a> <!-- method navigator-link -->
@@ -145,57 +160,13 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Verify that user is able to click on cart&quot;, &quot;Customisation of product features&quot;)">
-                  </a> <!-- runScenario("Verify that user is able to click on cart", "Customisation of product features") -->
+                  <a name="runScenario(&quot;User should be able to search two products&quot;, &quot;Customisation of product features&quot;)">
+                  </a> <!-- runScenario("User should be able to search two products", "Customisation of product features") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Verify that user is able to click on cart","Customisation of product features")</span>
-                  <div class="stack-trace">io.cucumber.testng.UndefinedStepException: The step &apos;:&apos; is undefined.
-You can implement this step using the snippet(s) below:
-
-@When(&quot;:&quot;)
-public void () {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
-	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:130)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:130)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+                  <span class="parameters">("User should be able to search two products","Customisation of product features")</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;Pages.HomePage.getSearchBox()&quot; because &quot;this.homePage&quot; is null
+	at steps.StepDefinations.the_User_Clicks_On_Searchbar_And_Enters(StepDefinations.java:68)
+	at ✽.: the user clicks on searchbar and enters &quot;&lt;products&gt;&quot;(file:///C:/Download/Capg/Cucumber/src/test/resources/features/Nykaa_Customisation.feature:29)
 
 </div> <!-- stack-trace -->
                   <em>
@@ -204,57 +175,13 @@ public void () {
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Verify that the user is able to click the brands button so that he/she can search different brands ...)">
-                  </a> <!-- runScenario("Verify that the user is able to click the brands button so that he/she can search different brands ...) -->
+                  <a name="runScenario(&quot;User should be able to search two products&quot;, &quot;Customisation of product features&quot;)">
+                  </a> <!-- runScenario("User should be able to search two products", "Customisation of product features") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Verify that the user is able to click the brands button so that he/she can search different brands inside the dropdown","Customisation of product features")</span>
-                  <div class="stack-trace">io.cucumber.testng.UndefinedStepException: The step &apos;: the user clicks on brands icon , he/she enters the brand name inside search bar&apos; is undefined.
-You can implement this step using the snippet(s) below:
-
-@When(&quot;: the user clicks on brands icon , he\\/she enters the brand name inside search bar&quot;)
-public void the_user_clicks_on_brands_icon_he_she_enters_the_brand_name_inside_search_bar() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
-	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:130)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:130)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+                  <span class="parameters">("User should be able to search two products","Customisation of product features")</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;Pages.HomePage.getSearchBox()&quot; because &quot;this.homePage&quot; is null
+	at steps.StepDefinations.the_User_Clicks_On_Searchbar_And_Enters(StepDefinations.java:68)
+	at ✽.: the user clicks on searchbar and enters &quot;&lt;products&gt;&quot;(file:///C:/Download/Capg/Cucumber/src/test/resources/features/Nykaa_Customisation.feature:29)
 
 </div> <!-- stack-trace -->
                   <em>
@@ -269,6 +196,36 @@ public void the_user_clicks_on_brands_icon_he_she_enters_the_brand_name_inside_s
               <span class="class-name">runners.TestRunner</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify that the user should be able to search a product&quot;, &quot;Customisation of product features&quot;)">
+                  </a> <!-- runScenario("Verify that the user should be able to search a product", "Customisation of product features") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify that the user should be able to search a product","Customisation of product features")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify that the user should be able to search a product&quot;, &quot;Customisation of product features&quot;)">
+                  </a> <!-- runScenario("Verify that the user should be able to search a product", "Customisation of product features") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify that the user should be able to search a product","Customisation of product features")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify that the user should be able to search a product&quot;, &quot;Customisation of product features&quot;)">
+                  </a> <!-- runScenario("Verify that the user should be able to search a product", "Customisation of product features") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify that the user should be able to search a product","Customisation of product features")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="runScenario(&quot;Verify that the user should be able to search a product&quot;, &quot;Customisation of product features&quot;)">
@@ -341,24 +298,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'runners.TestRunner')
-data.setCell(0, 3, 9889);
+data.setCell(0, 3, 26265);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'runners.TestRunner')
-data.setCell(1, 3, 8849);
+data.setCell(1, 3, 14188);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'runScenario')
 data.setCell(2, 2, 'runners.TestRunner')
-data.setCell(2, 3, 8281);
+data.setCell(2, 3, 13710);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'runScenario')
+data.setCell(3, 2, 'runners.TestRunner')
+data.setCell(3, 3, 13270);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'runScenario')
+data.setCell(4, 2, 'runners.TestRunner')
+data.setCell(4, 3, 9396);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'runScenario')
+data.setCell(5, 2, 'runners.TestRunner')
+data.setCell(5, 3, 9384);
 window.suiteTableData['All_Test_Suite']= { tableData: data, tableDiv: 'times-div-All_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 27 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-All_Test_Suite">
               </div> <!-- times-div-All_Test_Suite -->
             </div> <!-- times-div -->
@@ -386,28 +355,40 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">runners.TestRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@71b6172c)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@3c60c681)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">runScenario("Verify that the user should be able to search a product", "Customisation of product features")</span>
-                <span class="method-start">502 ms</span>
+                <span class="method-start">550 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify that the user should be able to search a product", "Customisation of product features")</span>
+                <span class="method-start">9940 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify that the user should be able to search a product", "Customisation of product features")</span>
+                <span class="method-start">36206 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify that the user should be able to search a product", "Customisation of product features")</span>
+                <span class="method-start">50396 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">runScenario("Verify that the user is able to click the brands button so that he/she can search different brands ...)</span>
-                <span class="method-start">8789 ms</span>
+                <span class="method-name">runScenario("User should be able to search two products", "Customisation of product features")</span>
+                <span class="method-start">63667 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">runScenario("Verify that user is able to click on cart", "Customisation of product features")</span>
-                <span class="method-start">18682 ms</span>
+                <span class="method-name">runScenario("User should be able to search two products", "Customisation of product features")</span>
+                <span class="method-start">73065 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">27534 ms</span>
+                <span class="method-start">86777 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
