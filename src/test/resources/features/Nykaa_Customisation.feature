@@ -12,7 +12,6 @@ Feature:Customisation of product features
   Scenario: Verify that the user is able to click the brands button so that he/she can search different brands inside the dropdown
     Given : The user navigates to the home page
     When : the user clicks on brands Icon
-    And :User enters the brand name inside search bar
     Then : the different brands are displayed to the user
 
   Scenario: Verify that user is able to click on nykaa fashion

@@ -32,7 +32,7 @@ public class HomePage {
     @FindBy(xpath = "//h1[@class=\"page-title-search\"]")
     WebElement searchResult;
 
-    @FindBy(xpath = "//a[@class=\"css-1mavm7h\"]")
+    @FindBy(xpath = "//ul[@class=\"HeaderNav css-f7ogli\"][1]")
     WebElement searchBrand;
 
     public WebElement getSearchBrand() {
@@ -43,6 +43,18 @@ public class HomePage {
 
     public WebElement getSearchBrandResult() {
         return searchBrandResult;
+    }
+    @FindBy(xpath = "//ul[@class=\"HeaderNav css-f7ogli\"]")
+    WebElement clickNykaaFashion;
+
+    public WebElement getClickNykaaFashion() {
+        return clickNykaaFashion;
+    }
+    @FindBy(xpath = "//div[@class=\"css-vqypwr\"]")
+    WebElement searchNykaaFashion;
+
+    public WebElement getSearchNykaaFashion() {
+        return searchNykaaFashion;
     }
 }
 

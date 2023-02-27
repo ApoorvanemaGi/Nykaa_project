@@ -71,12 +71,6 @@ public class StepDefinations{
 
     }
 
-    @And(":User enters the brand name inside search bar")
-    public void user_Enters_The_Brand_Name_Inside_SearchBar() {
-
-
-    }
-
     @Then(": the different brands are displayed to the user")
     public void the_Different_Brands_Are_Displayed_To_The_User() {
         String text = homePage.getSearchBrandResult().getText();
@@ -87,15 +81,15 @@ public class StepDefinations{
     @When(": the user clicks on nykaa fashion")
     public void the_User_Clicks_On_Nykaa_Fashion() {
         homePage = new HomePage(driver);
-        homePage.getSearchBox().sendKeys("Nykaa cosmetics");
-        homePage.getSearchBox().sendKeys(Keys.ENTER);
+        homePage.getClickNykaaFashion().sendKeys("Nykaa Fashion");
+        homePage.getClickNykaaFashion().sendKeys(Keys.ENTER);
 
     }
 
     @Then(": the different nykaa fashion products are displayed")
     public void the_Different_Nykaa_Fashion_Products_Are_Displayed() {
         String text = homePage.getSearchResult().getText();
-        Assert.assertEquals(text, "Nykaa cosmetics");
+        Assert.assertEquals(text, "Nykaa Fashion");
 
     }
 
