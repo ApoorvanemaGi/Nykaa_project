@@ -2,7 +2,7 @@ Feature:Customisation of product features
 
   Background: : User can access the home page.
     Given : User is able to access the home page.
-
+@Smoke
   Scenario: Verify that the user should be able to search a product
     Given : The user navigates to the home page
     When : the user enter the product name
